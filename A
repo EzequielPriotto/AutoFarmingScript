@@ -1,0 +1,26 @@
+        def presionarSpace():
+                pyautogui.press('x')
+                print('Plantacion completado')
+                tiempo = 2  #segundos
+                t = Timer(tiempo, presionar2)
+                t.start()
+
+        def presionar2():
+                pyautogui.press('x')
+                print('riego 1 completado')
+                t = Timer(tiempo, presionar3)
+                t.start()
+        def presionar3():
+                pyautogui.press('x')
+                print('riego 2 completado')
+                t = Timer(tiempo, presionar4)
+                t.start()
+        def presionar4():
+                pyautogui.press('x')
+                print('riego 3 completado')
+                t = Timer(tiempo, presionar5)
+                t.start()
+        def presionar5():
+                pyautogui.press('x')
+                print('riego 4 completado')
+                exit()
